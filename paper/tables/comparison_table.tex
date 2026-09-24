@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Our headline-class mean AP50 against detector performance reported by prior
+work on related Bangladeshi/South Asian vehicle-detection tasks. Tasks, class sets and
+training budgets differ across rows (see Section \ref{sec:results}); these are
+context points, not a controlled comparison.}
+\label{tab:comparison}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lllc@{}}
+\toprule
+Source & Task & Detector & Metric \\
+\midrule
+This work (E2, in-domain) & BadODD, Ctg., 7-class & YOLOv8s & 0.483 mAP50 \\
+This work (E1, Dhaka$\to$Ctg.) & BadODD, Ctg., 7-class & YOLOv8s & 0.385 mAP50 \\
+BadODD baseline \cite{baig2024badodd} & BadODD, all-district & YOLOv8 & 0.70 mAP\textsuperscript{a} \\
+Hossain et al.\ \cite{hossain2025yolobd} & BD urban, 29-class & YOLOv8m & 0.625 mAP50 \\
+BMD-45 \cite{sharma2026bmd45} & UA-DETRAC$\to$BMD-45\textsuperscript{b} & YOLOv12-S & 0.38$\to$0.42 mAP50:95 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2pt}
+{\footnotesize\textsuperscript{a}Metric unspecified as mAP50 vs.\ mAP50:95 in the
+source; 10-epoch baseline, not a tuned reference. \textsuperscript{b}Cross-dataset
+transfer, not cross-city; architecture-matched row from the source's main benchmark
+table, shown for scale rather than direct comparison.}
+\end{table}

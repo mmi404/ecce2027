@@ -1,0 +1,78 @@
+{
+  "ctg_pooled_eval": {
+    "n_images": 1121,
+    "total_boxes": 36881,
+    "mAP50": 0.25034576069630543,
+    "mAP50_95": 0.13355769282361313,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.5565684774544521,
+      "bicycle": 0.0002464976788135245,
+      "bus": 0.33580675867705595,
+      "car": 0.5166673600079557,
+      "cart_vehicle": 0.0013501350135013501,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.4408719713068134,
+      "person": 0.2752361126928864,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.33843631067861846,
+      "truck": 0.2886197441492629
+    }
+  },
+  "dhaka_fold1_eval": {
+    "n_images": 571,
+    "total_boxes": 17822,
+    "mAP50": 0.48271773320187317,
+    "mAP50_95": 0.29678764799077934,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.759397574036325,
+      "bicycle": 0.30023286025436563,
+      "bus": 0.6019306473993534,
+      "car": 0.8116417156639935,
+      "cart_vehicle": 0.01051980198019802,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.7533749817958096,
+      "person": 0.687619756211265,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.7709414694651532,
+      "truck": 0.6142362584141416
+    }
+  },
+  "ctg_robustness_holdout_bohoddarhat1_eval": {
+    "n_images": 275,
+    "total_boxes": 6314,
+    "mAP50": 0.23346825679547764,
+    "mAP50_95": 0.1331028996358671,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.5716265817702259,
+      "bicycle": 0.01785714285714285,
+      "bus": 0.19345836239575734,
+      "car": 0.5632722464722865,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.36911901515838597,
+      "person": 0.3548864408734666,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.3137136108038566,
+      "truck": 0.18421742441913222
+    }
+  },
+  "ctg_robustness_holdout_bohoddarhat2_eval": {
+    "n_images": 213,
+    "total_boxes": 6658,
+    "mAP50": 0.27261079546943606,
+    "mAP50_95": 0.1511501909041673,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.6021156493216122,
+      "bicycle": 0.0,
+      "bus": 0.45492443981240227,
+      "car": 0.5740698801484958,
+      "cart_vehicle": 0.011192423590185107,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.3881034329314558,
+      "person": 0.2814350347312045,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.43984049096059447,
+      "truck": 0.24703739866784669
+    }
+  }
+}

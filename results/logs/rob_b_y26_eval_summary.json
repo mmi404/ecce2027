@@ -1,0 +1,21 @@
+{
+  "ctg_robustness_holdout_bohoddarhat2_eval": {
+    "n_images": 213,
+    "total_boxes": 13031,
+    "mAP50": 0.31283272870816414,
+    "mAP50_95": 0.17718161181022488,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.7376297077809546,
+      "bicycle": 0.006497524752475247,
+      "bus": 0.2021194306930693,
+      "car": 0.6606027273965894,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.46408040664653816,
+      "person": 0.41681094206673025,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.6587544700060999,
+      "truck": 0.29466480644734844
+    }
+  }
+}

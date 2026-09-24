@@ -1,0 +1,40 @@
+{
+  "ctg_fold1_eval": {
+    "n_images": 372,
+    "total_boxes": 17614,
+    "mAP50": 0.34320834126244804,
+    "mAP50_95": 0.201565699524161,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.7634526530956453,
+      "bicycle": NaN,
+      "bus": 0.20307986902424346,
+      "car": 0.6142151706457659,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.2849912390289791,
+      "person": 0.36265903072383815,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.5675778319363209,
+      "truck": 0.6361076181696873
+    }
+  },
+  "dhaka_fold1_eval": {
+    "n_images": 571,
+    "total_boxes": 31340,
+    "mAP50": 0.3431482403011909,
+    "mAP50_95": 0.19057601372644356,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.7197270810617461,
+      "bicycle": 0.06887914450658485,
+      "bus": 0.3139678315855719,
+      "car": 0.6227591094935768,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.2616690240452616,
+      "motorbike": 0.5591032753938514,
+      "person": 0.4657647908197872,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.5392757619586874,
+      "truck": 0.22348462444803227
+    }
+  }
+}

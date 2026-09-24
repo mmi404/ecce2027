@@ -1,0 +1,9 @@
+true\pred,auto_rickshaw,bus,car,motorbike,person,three_wheeler,truck,background
+auto_rickshaw,2488,125,102,2,13,57,58,2543
+bus,7,377,3,0,3,1,21,821
+car,93,21,1514,6,4,12,18,1698
+motorbike,6,0,10,432,19,5,1,730
+person,14,2,2,5,1599,7,1,5897
+three_wheeler,185,15,25,3,36,733,15,1952
+truck,38,77,47,0,1,8,445,1388
+background,269,157,231,120,551,180,97,0

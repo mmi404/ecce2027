@@ -1,0 +1,5 @@
+mode_group,classes,total_n_gt_ctg,e1_ap50_mean,e2_ap50_pooled,ap50_gap,e1_recall_mean,e2_recall_pooled,recall_gap
+pedestrian,person,2509,0.3159,0.4196,0.1037,0.2658,0.3675,0.1017
+non_motorised,"three_wheeler,bicycle,cart_vehicle",1026,0.3652,0.592,0.2269,0.2904,0.5477,0.2573
+informal_motorised,auto_rickshaw,1796,0.5865,0.772,0.1855,0.4727,0.74,0.2673
+formal_motorised,"car,bus,truck,motorbike,priority_vehicle,construction_vehicle",2621,0.446,0.4999,0.054,0.3857,0.451,0.0652

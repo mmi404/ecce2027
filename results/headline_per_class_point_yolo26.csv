@@ -1,0 +1,12 @@
+class,n_gt_ctg,headline,e1_ap50_mean,e2_ap50_pooled,ap50_gap_point,e1_recall_mean,e2_recall_pooled,recall_gap_point
+auto_rickshaw,1796,True,0.5865,0.772,0.1854,0.4727,0.74,0.2673
+bicycle,19,False,0.0002,0.0,-0.0002,0.0,0.0,0.0
+bus,411,True,0.3545,0.3642,0.0097,0.3439,0.3041,-0.0397
+car,1122,True,0.554,0.6157,0.0617,0.4819,0.566,0.0841
+cart_vehicle,19,False,0.0004,0.0,-0.0004,0.0,0.0,0.0
+construction_vehicle,11,False,0.0,0.0316,0.0316,0.0,0.0,0.0
+motorbike,401,True,0.4737,0.4249,-0.0488,0.4281,0.389,-0.0391
+person,2509,True,0.3159,0.4196,0.1037,0.2658,0.3675,0.1016
+priority_vehicle,8,False,0.0,0.0,0.0,0.0,0.0,0.0
+three_wheeler,988,True,0.3792,0.6148,0.2356,0.3016,0.5688,0.2672
+truck,668,True,0.3168,0.4477,0.1309,0.2355,0.3982,0.1627

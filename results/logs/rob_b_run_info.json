@@ -1,0 +1,12 @@
+{
+  "run_id": "rob_b",
+  "gpu_name": "Tesla T4",
+  "total_vram_gb": 14.56219482421875,
+  "torch_version": "2.10.0+cu128",
+  "ultralytics_version": "8.4.155",
+  "epochs": 100,
+  "resumed": false,
+  "total_train_time_s": 1059.2554080486298,
+  "seconds_per_epoch_this_session": 10.592554080486298,
+  "peak_vram_gb": 3.2743911743164062
+}

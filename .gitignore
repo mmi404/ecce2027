@@ -1,0 +1,43 @@
+﻿plan/
+plan
+*.zip
+__pycache__/
+*.pyc
+.vscode/
+
+# Raw/derived BadODD imagery -- re-download from the Zenodo DOI in the paper instead
+# of committing ~10k images. Ground truth (data/processed/coco_gt/) and split lists
+# (data/processed/splits/) are kept: small, and needed to reproduce any metric offline.
+data/raw/
+data/processed/labels/
+data/processed/badodd_ecce2027_overlay/
+data/processed/badodd_ecce2027_overlay.zip
+
+results/weights/
+results/_kaggle_raw/
+*.pt
+
+# Personal working notes for this Claude Code session -- not for the public repo.
+# Contains full name, supervisor name, and a second student's name/email for an
+# unrelated derivative (attachment/company) paper. Never remove this line.
+AGENT_BRIEF.md
+STATUS.md
+
+# Plagiarism-check report -- never public.
+paper/turnitin plagirism check.pdf
+
+# Dataset sample crops copied out for manual QA -- not needed to reproduce the
+# paper (the Zenodo DOI in main.tex is the actual data source).
+notes/yolo_samples/
+notes/audit_crops/
+
+# LaTeX build artifacts (regenerate with latexmk).
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.bbl
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.out
+

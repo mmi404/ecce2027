@@ -1,0 +1,13 @@
+image_id,n_gt_headline,e1_mean_recall,e2_recall,recall_drop
+chittagong_bohoddarhat1_11800,3,0.0,1.0,1.0
+chittagong_bohoddarhat1_13688,2,0.0,1.0,1.0
+chittagong_bohoddarhat1_2832,3,0.0,1.0,1.0
+chittagong_bohoddarhat1_3186,2,0.0,1.0,1.0
+chittagong_bohoddarhat1_3422,2,0.0,1.0,1.0
+chittagong_night1_11940,2,0.0,1.0,1.0
+chittagong_night1_8520,2,0.0,1.0,1.0
+chittagong_night1_8550,2,0.0,1.0,1.0
+chittagong_night1_8580,2,0.0,1.0,1.0
+chittagong_bohoddarhat1_14160,2,0.16666666666666666,1.0,0.8333333333333334
+chittagong_night1_11040,2,0.16666666666666666,1.0,0.8333333333333334
+chittagong_night1_11070,2,0.16666666666666666,1.0,0.8333333333333334

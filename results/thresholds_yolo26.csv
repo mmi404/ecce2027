@@ -1,0 +1,9 @@
+run_id,in_domain_target,threshold,precision,recall,f1
+e1_0_y26,dhaka_fold0_eval,0.44,0.7498,0.6278,0.6834
+e1_1_y26,dhaka_fold1_eval,0.45,0.8177,0.6672,0.7348
+e1_2_y26,dhaka_fold2_eval,0.39,0.7994,0.6618,0.7241
+e2_0_y26,ctg_fold0_eval,0.41,0.7409,0.4868,0.5875
+e2_1_y26,ctg_fold1_eval,0.31,0.7262,0.5689,0.638
+e2_2_y26,ctg_fold2_eval,0.37,0.7214,0.4784,0.5753
+rob_a_y26,(none; mean of E2 folds),0.363,,,
+rob_b_y26,(none; mean of E2 folds),0.363,,,

@@ -1,0 +1,78 @@
+{
+  "ctg_pooled_eval": {
+    "n_images": 1121,
+    "total_boxes": 42693,
+    "mAP50": 0.27810362379777487,
+    "mAP50_95": 0.15394986762270554,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.5737170244089216,
+      "bicycle": 0.0,
+      "bus": 0.4017902085135302,
+      "car": 0.5531497890725068,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.4980870341001243,
+      "person": 0.3268220260571231,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.4289130669946714,
+      "truck": 0.2766607126286465
+    }
+  },
+  "dhaka_fold1_eval": {
+    "n_images": 571,
+    "total_boxes": 20484,
+    "mAP50": 0.4923575769193997,
+    "mAP50_95": 0.31412756734499914,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.7379746348130023,
+      "bicycle": 0.299849467313762,
+      "bus": 0.6453405220768843,
+      "car": 0.8183810185969752,
+      "cart_vehicle": 0.011221122112211221,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.7619657848472706,
+      "person": 0.7265660335788398,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.778921325736886,
+      "truck": 0.6357134370375652
+    }
+  },
+  "ctg_robustness_holdout_bohoddarhat1_eval": {
+    "n_images": 275,
+    "total_boxes": 9897,
+    "mAP50": 0.28407349938873294,
+    "mAP50_95": 0.1694483365014782,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.6406981788979329,
+      "bicycle": 0.0,
+      "bus": 0.28816328952696346,
+      "car": 0.6202962758967882,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.4481222961220699,
+      "person": 0.41258490872868103,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.4468440185087832,
+      "truck": 0.2680995255948436
+    }
+  },
+  "ctg_robustness_holdout_bohoddarhat2_eval": {
+    "n_images": 213,
+    "total_boxes": 9947,
+    "mAP50": 0.3048735052518507,
+    "mAP50_95": 0.17366599078533043,
+    "per_class_ap50": {
+      "auto_rickshaw": 0.6861064678027322,
+      "bicycle": 0.0,
+      "bus": 0.43873605007559585,
+      "car": 0.670979710307066,
+      "cart_vehicle": 0.0,
+      "construction_vehicle": 0.0,
+      "motorbike": 0.41366440699475787,
+      "person": 0.35932125859286507,
+      "priority_vehicle": 0.0,
+      "three_wheeler": 0.5369055480463123,
+      "truck": 0.24789511595102784
+    }
+  }
+}
