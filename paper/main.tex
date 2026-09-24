@@ -7,6 +7,9 @@
 \input{tables/macros}
 \input{tables/macros_yolo26}
 
+% Anonymised for review; swap for the real GitHub URL at camera-ready.
+\newcommand{\CodeLink}{https://anonymous.4open.science/r/PLACEHOLDER}
+
 \begin{document}
 
 \title{Class-Resolved Cross-City Transfer of YOLO Vehicle Detectors: A Dhaka-to-Chattogram Study}
@@ -201,7 +204,9 @@ predictions at confidence 0.001 in COCO format, so all metrics below are recompu
 offline. All 8 runs are then repeated with YOLO26s \cite{jocher2026yolo26} (same
 Ultralytics version, COCO-pretrained), with splits, seed and hyperparameters unchanged
 -- including the SGD optimizer, rather than YOLO26's default MuSGD -- so that only the
-model differs, to test whether the result depends on the architecture.
+model differs, to test whether the result depends on the architecture. Code, the
+offline metric-recomputation pipeline and every prediction file behind the numbers
+below are available at \url{\CodeLink}.
 
 \begin{figure*}[t]
 \centering
