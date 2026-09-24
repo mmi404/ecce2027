@@ -19,8 +19,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import wp4_lib as w
 
 RESULTS_DIR = os.path.join(w.PROJECT_ROOT, 'results')
-FIG_DIR = os.path.join(w.PROJECT_ROOT, 'paper', 'figures')
-os.makedirs(FIG_DIR, exist_ok=True)
 
 HEADLINE_IDS = sorted(cid for cid, name in w.CLASS_NAMES.items() if name in w.HEADLINE_CLASSES)
 LABELS = [w.CLASS_NAMES[c] for c in HEADLINE_IDS] + ['background']
@@ -76,48 +74,15 @@ def new_matrix():
     return {r: {c: 0 for c in LABELS} for r in LABELS}
 
 
-def save_and_plot(matrix, name, title):
-    rows = [w.CLASS_NAMES[c] for c in HEADLINE_IDS]  # background row excluded (no GT-less rows to normalise)
+def save_matrix(matrix, name):
+    # Row-normalisation (for src/make_confusion_tables.py, which renders the paper's
+    # table) excludes the background row: it has no "true" GT to normalise against.
     with open(os.path.join(RESULTS_DIR, f'confusion_{name}.csv'), 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['true\\pred'] + LABELS)
         for r in LABELS:
             writer.writerow([r] + [matrix[r][c] for c in LABELS])
     print(f'Wrote results/confusion_{name}.csv')
-
-    import numpy as np
-    import matplotlib
-    matplotlib.use('Agg')
-    import matplotlib.pyplot as plt
-
-    # Normalise by true-class row sum (excluding the background row, which has no "true" GT).
-    mat = np.zeros((len(rows), len(LABELS)))
-    for i, r in enumerate(rows):
-        row_sum = sum(matrix[r][c] for c in LABELS)
-        for j, c in enumerate(LABELS):
-            mat[i, j] = matrix[r][c] / row_sum if row_sum > 0 else 0.0
-
-    fig, ax = plt.subplots(figsize=(6, 5))
-    im = ax.imshow(mat, cmap='Blues', vmin=0, vmax=1)
-    ax.set_xticks(range(len(LABELS)))
-    ax.set_xticklabels(LABELS, rotation=45, ha='right', fontsize=8)
-    ax.set_yticks(range(len(rows)))
-    ax.set_yticklabels(rows, fontsize=8)
-    ax.set_xlabel('Predicted')
-    ax.set_ylabel('True')
-    ax.set_title(title, fontsize=10)
-    for i in range(len(rows)):
-        for j in range(len(LABELS)):
-            v = mat[i, j]
-            if v > 0.01:
-                ax.text(j, i, f'{v:.2f}', ha='center', va='center',
-                        fontsize=6, color='white' if v > 0.5 else 'black')
-    fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    fig.tight_layout()
-    out_path = os.path.join(FIG_DIR, f'confusion_{name}.pdf')
-    fig.savefig(out_path)
-    plt.close(fig)
-    print(f'Wrote {out_path}')
 
 
 def main():
@@ -135,7 +100,7 @@ def main():
     for k in range(3):
         preds = load_raw_preds(f'e1_{k}', 'ctg_pooled_eval', thresholds[f'e1_{k}'])
         accumulate_confusion(gt_by_image, preds, image_ids, e1_matrix)
-    save_and_plot(e1_matrix, 'e1', 'E1 (Dhaka-trained, 3 folds summed) on Chattogram')
+    save_matrix(e1_matrix, 'e1')
 
     # E2: pooled out-of-fold predictions, one evaluation over the full 1,121 images.
     e2_preds_by_image = defaultdict(list)
@@ -151,7 +116,7 @@ def main():
         e2_preds_by_image[img_id].sort(key=lambda x: -x[0])
     e2_matrix = new_matrix()
     accumulate_confusion(gt_by_image, e2_preds_by_image, image_ids, e2_matrix)
-    save_and_plot(e2_matrix, 'e2', 'E2 (Chattogram-trained, out-of-fold pooled)')
+    save_matrix(e2_matrix, 'e2')
 
 
 if __name__ == '__main__':

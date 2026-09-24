@@ -3,6 +3,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage[table]{xcolor}
 
 \input{tables/macros}
 \input{tables/macros_yolo26}
@@ -331,19 +332,9 @@ gap in the same corridor. The class-concentrated transfer gap is therefore not a
 artifact of the YOLOv8s architecture specifically.
 
 \subsection{Confusion patterns}
-\begin{figure*}[t]
-\centering
-\includegraphics[width=0.44\linewidth]{figures/confusion_e1.pdf}
-\includegraphics[width=0.44\linewidth]{figures/confusion_e2.pdf}
-\caption{Row-normalised confusion matrices (headline classes + background; IoU
-$\geq$0.5 greedy match) for E1 (left, 3 Dhaka folds summed) and E2 (right,
-Chattogram out-of-fold pooled), both on \texttt{ctg\_pooled\_eval}. A GT box with no
-matching prediction counts as ``background'' in that row (a miss); a prediction with
-no matching GT counts as ``background'' in that column (a false positive).}
-\label{fig:confusion}
-\end{figure*}
+\input{tables/confusion_tables}
 
-Figure \ref{fig:confusion} breaks the recall gap down into misses vs.\ misclassifications.
+Table \ref{tab:confusion} breaks the recall gap down into misses vs.\ misclassifications.
 For E1, the background column (missed detections) is the dominant off-diagonal entry
 for every headline class, and is visibly larger for \texttt{auto\_rickshaw} and
 \texttt{three\_wheeler} than for \texttt{car}/\texttt{person} -- consistent with the

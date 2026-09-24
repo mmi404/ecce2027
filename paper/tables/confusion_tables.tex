@@ -1,0 +1,58 @@
+\begin{table*}[t]
+\centering
+\begin{minipage}{0.48\linewidth}
+\centering
+\scriptsize
+\textbf{E1} (Dhaka-trained, 3 folds summed)\\[2pt]
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{True}$\backslash$\textbf{Pred} & \textbf{AR} & \textbf{BU} & \textbf{CA} & \textbf{MB} & \textbf{PE} & \textbf{TW} & \textbf{TR} & \textbf{BG} \\
+\hline
+\textbf{AR} & \cellcolor{blue!46}46 & \cellcolor{blue!2}2 & \cellcolor{blue!2}2 &  &  & \cellcolor{blue!1}1 & \cellcolor{blue!1}1 & \cellcolor{blue!47}47 \\
+\hline
+\textbf{BU} & \cellcolor{blue!1}1 & \cellcolor{blue!31}31 &  &  &  &  & \cellcolor{blue!2}2 & \cellcolor{blue!67}67 \\
+\hline
+\textbf{CA} & \cellcolor{blue!3}3 & \cellcolor{blue!1}1 & \cellcolor{blue!45}45 &  &  &  & \cellcolor{blue!1}1 & \cellcolor{blue!50}50 \\
+\hline
+\textbf{MB} &  &  & \cellcolor{blue!1}1 & \cellcolor{blue!36}36 & \cellcolor{blue!2}2 &  &  & \cellcolor{blue!61}61 \\
+\hline
+\textbf{PE} &  &  &  &  & \cellcolor{blue!21}21 &  &  & \cellcolor{blue!78}78 \\
+\hline
+\textbf{TW} & \cellcolor{blue!6}6 & \cellcolor{blue!1}1 & \cellcolor{blue!1}1 &  & \cellcolor{blue!1}1 & \cellcolor{blue!25}25 & \cellcolor{blue!1}1 & \cellcolor{blue!66}66 \\
+\hline
+\textbf{TR} & \cellcolor{blue!2}2 & \cellcolor{blue!4}4 & \cellcolor{blue!2}2 &  &  &  & \cellcolor{blue!22}22 & \cellcolor{blue!69}69 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\scriptsize
+\textbf{E2} (Chattogram-trained, out-of-fold pooled)\\[2pt]
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{True}$\backslash$\textbf{Pred} & \textbf{AR} & \textbf{BU} & \textbf{CA} & \textbf{MB} & \textbf{PE} & \textbf{TW} & \textbf{TR} & \textbf{BG} \\
+\hline
+\textbf{AR} & \cellcolor{blue!73}73 &  & \cellcolor{blue!1}1 &  &  & \cellcolor{blue!1}1 &  & \cellcolor{blue!24}24 \\
+\hline
+\textbf{BU} & \cellcolor{blue!3}3 & \cellcolor{blue!28}28 & \cellcolor{blue!2}2 &  &  & \cellcolor{blue!1}1 & \cellcolor{blue!11}11 & \cellcolor{blue!55}55 \\
+\hline
+\textbf{CA} & \cellcolor{blue!5}5 &  & \cellcolor{blue!57}57 &  &  & \cellcolor{blue!1}1 & \cellcolor{blue!1}1 & \cellcolor{blue!35}35 \\
+\hline
+\textbf{MB} & \cellcolor{blue!1}1 &  & \cellcolor{blue!1}1 & \cellcolor{blue!32}32 & \cellcolor{blue!2}2 & \cellcolor{blue!2}2 &  & \cellcolor{blue!61}61 \\
+\hline
+\textbf{PE} &  &  &  &  & \cellcolor{blue!33}33 & \cellcolor{blue!1}1 &  & \cellcolor{blue!66}66 \\
+\hline
+\textbf{TW} & \cellcolor{blue!2}2 &  & \cellcolor{blue!1}1 &  & \cellcolor{blue!2}2 & \cellcolor{blue!54}54 &  & \cellcolor{blue!40}40 \\
+\hline
+\textbf{TR} & \cellcolor{blue!6}6 & \cellcolor{blue!4}4 & \cellcolor{blue!3}3 &  &  & \cellcolor{blue!1}1 & \cellcolor{blue!35}35 & \cellcolor{blue!50}50 \\
+\hline
+\end{tabular}
+\end{minipage}
+\caption{Row-normalised confusion matrices (headline classes + background; IoU $\geq$0.5 greedy match) for E1 (left) and E2 (right), both on \texttt{ctg\_pooled\_eval}. Cells are row percentages (blank $<$1\%); a GT box with no matching prediction counts as background in that row (a miss), a prediction with no matching GT counts as background in that column (a false positive). AR=auto-rickshaw, BU=bus, CA=car, MB=motorbike, PE=person, TW=three-wheeler, TR=truck, BG=background.}
+\label{tab:confusion}
+\end{table*}
